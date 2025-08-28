@@ -1,0 +1,68 @@
+.about {
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.about .left {
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    max-width: 350px;
+}
+
+.about .right {
+    max-width: 700px;
+}
+
+.right .img-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.right .img-container .img {
+    max-width: 90%;
+    border: 1px solid #333;
+}
+
+.right .img-container .top {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    padding-top: 20%;
+    z-index: 6;
+}
+
+.right .img-container .bottom {
+    grid-column: 4 / -1;
+    grid-row: 1;
+    z-index: 5;
+}
+
+/* Add button styles if not already defined elsewhere */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: #ffd700;
+    color: #222;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: #ffed4e;
+    transform: translateY(-2px);
+}
